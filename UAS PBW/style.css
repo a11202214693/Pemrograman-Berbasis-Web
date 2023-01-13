@@ -1,0 +1,384 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/* header */
+body{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    justify-content: center;
+    box-shadow: 1px 1px rgba(0, 0, 0, .3);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: white;
+}
+
+nav a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0px;
+    background-color: white;
+    text-decoration: none;
+
+}
+
+nav ul{
+    list-style: none;
+}
+nav .list-menu{
+    display: flex;
+    gap: 30%;
+
+}
+nav .list-menu i{
+    transform: scaleX(-1);
+    cursor: pointer;
+}
+nav .list-action{
+    display: flex;
+    gap: 30%;
+}
+nav .list-action li i{
+    font-size: 20px;
+}
+.logo{
+    margin-left: 70px;
+}
+
+.logo h2{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: 1000;
+}
+
+.fa-magnifying-glass{
+    transform: scaleX(-1);
+}
+.list-action i:not(.fa-magnifying-glass):hover{
+    color: red;
+}
+.dropdown-content-menu{
+    display: none;
+    width: 100px;
+    padding:10px 30px 30px 20px;
+    margin-left: -3px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content-menu a{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.dropdown-content-menu pre{
+    color: red;
+    cursor: pointer;
+}
+.dropdown-content{
+    display: none;
+    width: 100px;
+    padding:30px 0px;
+    padding-left: 30px;
+    margin-left: -110px;
+    position: absolute;
+    background-color: white;
+}
+.dropdown-content a{
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover{
+    color: green;
+}
+.dropdown-button{
+    cursor: pointer;
+}
+.dropdown-button:hover .dropdown-content {
+    display: block;
+  }
+
+/* hero1 */
+.hero1{
+    align-items: center;
+    display: flex;
+    padding: 150px 40px;
+}
+
+.hero1 h1{
+    font-family: 'Montserrat';
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.hero1 p{
+    color:dimgrey;
+    font-family: 'Poppins';
+    font-size: 18px;
+    padding-right: 50px;
+}
+
+.hero1 a{
+    background-color: white;
+    color: black;
+    text-align: center;
+    transition: 0.3s;
+    font-family: 'Poppins';
+    font-size: 20px;
+    text-decoration: none;
+    border: 2px solid green;
+    border-radius: 1.875rem;
+    padding: 0.25em 1em 0.25em 1em;
+}
+
+.hero1 a:hover{
+    background-color: green;
+    color: white;
+}
+
+.hero1 img{
+    width: 27%;
+    margin-right: 60px;
+    border-radius: 5%;
+}
+
+.hero2 h1{
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat';
+}
+
+/* Float four columns side by side */
+.column {
+  /* float: center; */
+  width: 25%;
+  padding: 0 10px;
+  transition: 0.3s;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row1{
+    margin-bottom: 60px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-around;
+    /* align-content: center; */
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.card h2{
+    font-family: 'Montserrat';
+    font-size: 25px;
+}
+
+.card p{
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: dimgrey;
+}
+
+.card img{
+    width: 70%;
+    border-radius: 10px;
+}
+
+.alamat{
+    margin: 150px 40px 150px 40px;
+    align-content: center;
+}
+
+.alamat h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat';
+    margin-bottom: 60px;
+}
+
+.hero3{
+    display: flex;
+    align-items: center;
+    padding-left:100px;
+}
+
+.hero3img img{
+    margin: 0 15px 0 60px;
+    width: 75%;
+}
+
+.hero3content h2{
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Montserrat';
+}
+
+.hero3content p{
+    font-weight: lighter;
+    font-size: 18px;
+    font-family: 'Poppins';
+    padding-right: 200px;
+}
+
+.notelp{
+    display: flex;
+}
+
+.hero3content a{
+    background-color: white;
+    color: black;
+    text-align: center;
+    transition: 0.3s;
+    font-family: 'Poppins';
+    font-size: 18px;
+    text-decoration: none;
+    border: 2px solid green;
+    border-radius: 1.875rem;
+    padding: 0.25em 1em 0.25em 1em;
+}
+
+.hero3content a:hover{
+    color: white;
+    background-color: green;
+}
+
+.tentangkami{
+    text-align: center;
+    padding: 10% 5% 15% 5%;
+}
+
+.tentangkami h1{
+    font-family: 'Poppins';
+    font-size: 60px;
+    font-weight: 600;
+    padding: 0% 10% 0% 10%;
+    line-height: 1;
+}
+
+.tentangkami p{
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0% 20% 0% 20%;
+}
+
+.tiktok img{
+    width: 3%;
+}
+
+.detailproduct{
+    display: flex;
+    align-items: center;
+    padding :100px 0px 0px 120px;
+}
+
+.detailproductimg img{
+    margin: 0 15px 0 60px;
+    width: 75%;
+}
+
+.bottom{
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+    padding: 10px 40px 0px 40px;
+}
+
+.bottom h1{
+    font-family: 'Montserrat';
+    font-size: 30px;
+    line-height: 1;
+    color: black;
+}
+
+.bottom p{
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 60px;
+    /* padding: 0% 20% 0% 20%; */
+}
+
+form{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    border: 1px solid white;
+}
+
+form input{
+    border: 0;
+    outline: 0;
+    background-color: whitesmoke;
+    border-bottom: 2px solid whitesmoke;
+    padding: 10px 5px;
+    margin: 20px 0px;
+}
+form textarea{
+    border: 0;
+    outline: 0;
+    padding: 10px 5px;
+    background-color: whitesmoke;
+    border-bottom: 2px solid white;
+}
+.content{
+    padding-top: 100px;
+    margin: 0px 40px;
+    font-family: 'Montserrat';
+    margin-top: 10px;
+}
+.content img{
+    width: 200px;
+    height: 200px;  
+}
+.content h4{
+    width: 9%;
+    padding: 10px 0px;
+}
+.content h2{
+    width: 600px;
+}
+.content p{
+    max-width: 600px;
+}
